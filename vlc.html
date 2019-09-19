@@ -88,8 +88,16 @@
       var myDiv = document.getElementById("pres");
       var refreshMinutes = 2.3;
       var i = 1;
-      
-      var frames = ['<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhsxm_6jNZ4uJs_b0nljyemSb9JyPSeu7pK9Y3_SXS5_bMxU6RuZSSXKOyL4otg6Htn1l7v5Bf6yAl/embed?start=true&loop=true&delayms=10000" frameborder="0" width="1440" height="810" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>','<iframe width="1440" height="810" src="https://www.youtube.com/embed/8XsBGE_kpM0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'];
+
+      // **********************************************************************
+      // **********************************************************************
+      // TO CHANGE THE VIDEO THE ONLY THING YOU CHANGE IS THIS:
+      // https://www.youtube.com/embed/8XsBGE_kpM0     It's in the second line.
+      // Don't mess with ?rel=0&autoplay=1" ...
+      // **********************************************************************
+      // **********************************************************************
+      var frames = ['<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRhsxm_6jNZ4uJs_b0nljyemSb9JyPSeu7pK9Y3_SXS5_bMxU6RuZSSXKOyL4otg6Htn1l7v5Bf6yAl/embed?start=true&loop=true&delayms=10000" frameborder="0" width="1440" height="810" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>',
+                    '<iframe width="1440" height="810" src="https://www.youtube.com/embed/8XsBGE_kpM0?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'];
 
       myDiv.innerHTML = frames[i];
 
