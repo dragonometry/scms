@@ -39,7 +39,7 @@
     </table>
     
     <!-- Weather -->
-    <a class="weatherwidget-io" href="https://forecast7.com/en/42d95n83d83/48473/?unit=us" data-label_1="SWARTZ CREEK" data-label_2="WEATHER" data-theme="original" >SWARTZ CREEK WEATHER</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/42d95n83d83/48857/?unit=us" data-label_1="SWARTZ CREEK" data-label_2="WEATHER" data-theme="original" >SWARTZ CREEK WEATHER</a>
     
     <!-- Date and Time Script -->
     <script>
