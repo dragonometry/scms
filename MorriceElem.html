@@ -8,12 +8,14 @@
       #clockbox {
         font-size: 60px;
         font-family: sans-serif;
-        color:darkred;
+        color:darkorange;
       }
     </style>
-    <title>SCMS</title>    
+    <title>Morrice Jr/Sr High</title>    
   </head>
   <body>
+
+
     
     <div id="clockbox"></div>
 
@@ -24,29 +26,41 @@
           <div id="pres"> </div>
       
       </td>
-        <!--- Twitter -->
-        <td width="100%"><a class="twitter-timeline"
-                            data-height="400"
-                            href="https://twitter.com/SCMSDragons?ref_src=twsrc%5Etfw">Tweets by SCMSDragons</a> 
-                  <script async src="https://platform.twitter.com/widgets.js" 
-                  charset="utf-8"></script>
-        </td>
+      
+      <td> <!-- Added by AM to fix the mistake -->
+            <!-- Facebook ??? -->
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100063480822819&tabs=timeline&width=400&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+              width="400" 
+              height="400" 
+              style="border:none;overflow:hidden" 
+              scrolling="no" 
+              frameborder="0" 
+              allowfullscreen="true" 
+              allow="autoplay; 
+              clipboard-write; 
+              encrypted-media; 
+              picture-in-picture; web-share"></iframe>
+              
+      </td>
     </tr>
       <tr><td>
         <!-- Calendar -->
-        <iframe src="https://calendar.google.com/calendar/embed?src=uo83suafag6rlvoobrpf5oljo4%40group.calendar.google.com&ctz=America%2FNew_York&mode=AGENDA" 
-                style="border: 0" 
-                width="400" 
-                height="400" 
-                frameborder="0" 
-                scrolling="no">
+        <iframe src="https://calendar.google.com/calendar/embed?src=c_5535aabcd38e6c997be46255921fc5a799f1eec4d40efafe65871a03814952ef%40group.calendar.google.com&ctz=America%2FDetroit&mode=AGENDA" 
+          style="border: 0" 
+          width="400" 
+          height="400" 
+          frameborder="0" 
+          scrolling="no">
         </iframe>
         
         </td></tr>
     </table>
     
     <!-- Weather -->
-    <a class="weatherwidget-io" href="https://forecast7.com/en/42d95n83d83/48473/?unit=us" data-label_1="SWARTZ CREEK" data-label_2="WEATHER" data-theme="original" >SWARTZ CREEK WEATHER</a>
+    <a class="weatherwidget-io" href="https://forecast7.com/en/42d84n84d18/morrice/?unit=us" data-label_2="WEATHER" data-theme="original" >WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>  
     
     <!-- Date and Time Script -->
     <script>
@@ -90,7 +104,7 @@
         if(nmin<=9) nmin="0"+nmin;
         if(nsec<=9) nsec="0"+nsec;
 
-        var clocktext="SCMS  "+tday[nday]+", "+tmonth[nmonth]+" "+
+        var clocktext="MORRICE JR/SR HS  "+tday[nday]+", "+tmonth[nmonth]+" "+
             ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
         document.getElementById('clockbox').innerHTML=clocktext;
       }
@@ -118,10 +132,19 @@
       // TO CHANGE THE VIDEO THE ONLY THING YOU CHANGE IS THIS:
       // https://www.youtube.com/embed/8XsBGE_kpM0     It's in the second line.
       // Don't mess with ?rel=0&autoplay=1" ...
+      //
+      // For presentation, go to FILE - SHARE - PUBLISH TO WEB 
+      // and get embed code.
+      //
       // **********************************************************************
       // **********************************************************************
-      var frames = ['<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ4WfJK8DGvpE0Hi0yu9np0qtX7CAzlcYYks1cdLSUlicwJeYWqXOGAxtzS6HiZFrAHdAsM22wwDhGF/embed?start=true&loop=true&delayms=10000" frameborder="0" width="1440" height="810" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>',
+      //https://docs.google.com/presentation/d/1VH2yu15VYyeFIzNz_SCHg_4jodXAYGNrvUC93oPsN9c/edit?usp=sharing
+      var frames = ['<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSv8gb93I16h3Zow140sEPGcVS72xg7y6LsNBT6EuTXXD4TYS25nslmIjhHak4nyp1UPdAC1eqfO48n/embed?start=true&loop=true&delayms=9000" frameborder="0" width="1440" height="810" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>']
+
+      // OLD SCMS CODE
+      /* var frames = ['<iframe src="https://docs.google.com/presentation/d/e/1VH2yu15VYyeFIzNz_SCHg_4jodXAYGNrvUC93oPsN9c/embed?start=true&loop=true&delayms=10000" frameborder="0" width="1440" height="810" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>',
                     '<iframe width="1440" height="810" src="https://youtu.be/jck2u7RzmiA?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'];
+      */
 
       myDiv.innerHTML = frames[i];
 
